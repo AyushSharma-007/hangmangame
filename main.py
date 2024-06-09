@@ -21,11 +21,14 @@ for i in range(5):
     if number == 1:
         # for i in range(0,5):
             max =5
-            l1 = input("Enter the  letter of your guess")
+            l1 = input("Enter the  letter of your guess").lower()
             if l1 in word: 
                 count += 1 
                 print("You guess the letter right")
-                list1[word.index(l1) ] = l1
+                for i in range(len(word)):
+                    if word[i] == l1:
+                        list1[i] = l1
+                # list1[word.index(l1) ] = l1
                 print(list1)
             else            : 
                     count = 0
@@ -33,7 +36,7 @@ for i in range(5):
             max-=1
             print("You left with chances",max)
     if number == 2:
-        l1 = input("Enter the  word of your guess")
+        l1 = input("Enter the  word of your guess").lower()
         if l1 == word: 
             print("You guess the word right")
             break
