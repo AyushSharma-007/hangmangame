@@ -43,3 +43,4 @@ for i in range(5):
         else         : count = 0
     if count == len(word):
         print("You guess the word right")
+// this is the hangamn game
