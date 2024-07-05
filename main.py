@@ -1,4 +1,5 @@
 // this csv will be added to it
+// voice will be added to it
 l = ["india","china","brazil","kenya","pakistan","bangladesh","hongkong","iran","iraq","isreal"]
 import numpy as np
 print("----------WELCOME TO THE HANGMAN GAME --------")
